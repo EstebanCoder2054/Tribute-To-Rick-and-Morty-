@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reto1 | Rick and Morty</title>
+    <link rel="icon" href="./img/alien-copia.ico">
+    <!-- CSS del Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <!-- navbar de bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #91E092;">
+        <a class="navbar-brand" href="#">
+          <img src="./img/alien.png"  width="50px" height="50px" class="d-inline-block align-top" alt="icono del navbar">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="characters/characters.html">Characters</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./details/details.html">Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about-me/about-me.html">About Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+<!-- 
+      estructuración para las tarjetas de personajes
+     TODO IRÁ DENTRO DEL PRIMER DIV PARA QUE QUEDE CENTRADO-->
+     <!-- <div class="container">
+        <section class="main" class="row"> 
+          <img src="./img/alien.png" alt="" class="col-sm-8 col-md-4">
+          <img src="./img/alien.png" alt="" class="col-sm-8 col-md-4">
+          <img src="./img/alien.png" alt="" class="col-sm-8 col-md-4">
+        </section>
+
+        <div class="row">
+          <article class="col-sm-12 col-md-6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis alias ab voluptate iure tenetur minima asperiores enim sint! Molestias aliquam, molestiae eveniet praesentium fuga perferendis inventore in provident repellendus facilis?</p>
+          </article>
+
+          <article class="col-sm-12 col-md-6">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis alias ab voluptate iure tenetur minima asperiores enim sint! Molestias aliquam, molestiae eveniet praesentium fuga perferendis inventore in provident repellendus facilis?</p>
+            </article>
+        </div>
+     </div> -->
+     <!-- poniendo título al Home -->
+     <br>
+     <div class="container">
+
+        <div class="row">
+
+          <div class="page-header">
+
+            <h1 class="text-center" class="font-italic" > 
+              Soy el señor Meeseeks en forma de página web
+              <br>
+              <small style="background-color: #CFFFDF;" class="text-center">Por favor termina todo lo que debas hacer en esta página para poder desaparecer </small> 
+            </h1>
+            <br>
+
+          </div>
+
+        </div>
+
+     </div>
+
+
+     <div class="card-columns">
+      <div class="row">
+
+        <div class="card" style="width: 20rem;">
+          <img src="./img/alien.png" class="card-img-top img-fluid" alt="..." id="img1" class="imagen">
+          <div class="card-body">
+            <h5 class="card-title">Card title that wraps to a new line</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 20rem;">
+          <img src="./img/alien.png" class="card-img-top img-fluid" alt="..." id="img2" class="imagen">
+          <div class="card-body">
+            <h5 class="card-title">Card title that wraps to a new line</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 20rem;">
+          <img src="./img/alien.png" class="card-img-top img-fluid" alt="..." id="img3" class="imagen">
+          <div class="card-body">
+            <h5 class="card-title">Card title that wraps to a new line</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+
+        
+      </div>  
+   </div>   
+      
+
+<!-- Popper.js, JQuery, y JS del Bootstrap CDN     -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>    
