@@ -1,6 +1,10 @@
 //let imagenes = document.getElementsByClassName("imagen");
 
-window.onload = getRandomId(0,492);
+window.onload = function(){
+
+    getRandomId(0,492);
+
+}
 
 
 
@@ -32,9 +36,9 @@ function obtenerPersonajesRandom(numRandom1, numRandom2, numRandom3){
         let imagen2 = data[1].image;
         let imagen3 = data[2].image;
         //entregando las imagenes al método que las cambiará en el HTML
-        cambiarImagene1(imagen1);
-        cambiarImagene2(imagen2);
-        cambiarImagene3(imagen3);
+        cambiarImagen1(imagen1);
+        cambiarImagen2(imagen2);
+        cambiarImagen3(imagen3);
 
         console.log(datosPersonaje1);
         console.log(datosPersonaje2);
@@ -70,33 +74,33 @@ function cambiarImagen3(imagen3){
 
 
 
-    //para obtener todos los personajes
-    let arregloDeResultados = [];
-    let cont = 0;
-    let acum = 19;
-    //realizar un ciclo por cada página de personajes para recolectarlos a todos en un solo arreglo de personajes
+    // //para obtener todos los personajes
+    // let arregloDeResultados = [];
+    // let cont = 0;
+    // let acum = 19;
+    // //realizar un ciclo por cada página de personajes para recolectarlos a todos en un solo arreglo de personajes
 
-    for(let j = 0; j < 25; j++){
+    // for(let j = 0; j < 25; j++){
         
-        for(let i = cont; i < acum; i++){
+    //     for(let i = cont; i < acum; i++){
 
-            arregloDeResultados[i] = fetch(`https://rickandmortyapi.com/api/character/?page=${j}`)
-            .then((response) => response.json())
-            .then((data) => console.log(data.results[0]))
-            .catch((err) => console.log(err));    
+    //         arregloDeResultados[i] = fetch(`https://rickandmortyapi.com/api/character/?page=${j}`)
+    //         .then((response) => response.json())
+    //         .then((data) => console.log(data.results[0]))
+    //         .catch((err) => console.log(err));    
 
-            cont += 1;
+    //         cont += 1;
 
-        }
+    //     }
 
-        acum += 19;
+    //     acum += 19;
 
-    }    
+    // }    
 
-    console.log("Has sacado aleatoriamente el personaje con el id : " + numeroRandom);
-    fetch('https://rickandmortyapi.com/api/character/')
-    .then((response) => response.json())
-    .then((data) => console.log(data.results[numeroRandom].name))
-    .catch((err) => console.log(err));
+    // console.log("Has sacado aleatoriamente el personaje con el id : " + numeroRandom);
+    // fetch('https://rickandmortyapi.com/api/character/')
+    // .then((response) => response.json())
+    // .then((data) => console.log(data.results[numeroRandom].name))
+    // .catch((err) => console.log(err));
 
 
