@@ -90,3 +90,6 @@ function cambiarImagenesDinamicas( placeHolderImg, placeHolderNombre, placeHolde
     
     }
     
+
+
+
