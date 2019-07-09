@@ -1,6 +1,8 @@
 let arrayImagenes = [];
 let arrayNombres = [];
 let arrayStatus = [];
+
+let contenidoDinamico = document.getElementById("contenidoDinamico")
   
 fetch('https://rickandmortyapi.com/api/character/?page=1')
     .then((response) => response.json())
@@ -19,11 +21,9 @@ fetch('https://rickandmortyapi.com/api/character/?page=1')
         
             let divRecargado = `
                 
-            <div class="container">   
+            <div class="container-fluid">   
             
-            
-            <div class="card-columns thumbnail-container">
-                
+
             
             <div class="card" style="background-color: #C8D5E8">
             <img src=${arrayImagenes[i]} class="card-img-top img-fluid" alt="..." >
@@ -33,15 +33,11 @@ fetch('https://rickandmortyapi.com/api/character/?page=1')
             </div>
             </div>
             
-            
-            </div> 
-            
-            
             </div>
             
             `;
             nuevoDiv.innerHTML = divRecargado;
-            document.body.appendChild(nuevoDiv);
+            contenidoDinamico.appendChild(nuevoDiv);
             
     
             console.log("prueba");
